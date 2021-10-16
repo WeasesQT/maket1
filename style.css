@@ -1,0 +1,274 @@
+body
+{
+	background-image: url(bg.png);
+	padding: 0;
+	margin: 0;
+}
+.logo_bg
+{
+	margin-top: -15px;
+	margin-left: 200px;
+}
+.saf
+{
+
+	font-family: "sans-serif";
+	margin-left: 235px;
+	margin-top: -220px;
+	transform: rotate(-10deg);
+	font-size: 38px;
+	font-weight: bold;
+	color: rgb(41, 159, 202);
+}
+.inter
+{
+	font-weight: bold;
+	font-family: "sans-serif";
+	margin-left: 245px;
+	margin-top: -35px;
+	transform: rotate(-10deg);
+	color: rgb(41, 159, 202);
+	font-size: 15px;
+}
+.menu_bg
+{
+	margin-top: -25px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+.block1
+{
+	margin-left: 300px;
+	position: relative;
+}
+ul
+{	
+
+	position: relative;
+	margin-top: -65px;
+	padding-left: 800px;
+}
+li
+{
+	text-decoration: none;
+	color: white;
+	margin-left: 60px;
+	text-decoration: none;
+	display: inline;
+}
+a
+{
+	outline: none;
+	text-decoration: none;
+}
+a:link, a:visited 
+{
+  color: white;
+}
+a:hover
+{
+	color: yellow;
+}
+a::before
+{
+  background: yellow;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.7s ease;
+  width: 0%;
+  height: 100%;
+}
+
+a:hover::before
+{
+  width: 100%;
+}
+a:active::before
+{
+	width: 0;
+}
+.plane
+{
+	margin-left: 470px;
+	margin-top: 150px;
+	position: relative;
+}
+.cloud
+{
+	margin-top: -160px;
+	margin-left: 560px;
+}
+.sin 
+{
+	font-family: Gill Sans, sans-serif;
+	font-weight: bold;
+	color: rgb(41, 159, 202);
+	margin-top: -195px;
+	margin-left: 740px;
+	font-size: 45px;
+}
+.mala
+{
+	font-family: Gill Sans, sans-serif;
+	color: rgb(222, 217, 14);
+	margin-top: -35px;
+	margin-left: -135px;
+	font-size: 23px;
+	text-align:center;
+}
+.arrow1
+{	
+	position: relative;
+	margin-left: 490px;
+	outline:none;
+	margin-top: -50px;
+}
+.arrow2
+{	
+	position: relative;
+	margin-left: 550px;
+	outline:none;
+	margin-top: -20px;
+	transform: rotate(180deg);
+}
+.arrow1 {
+  transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out;
+  transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out;
+  border-radius:30px;
+}
+.arrow1:hover {
+  box-shadow: 0 0 40px 40px inset;
+  color: white;
+}
+.arrow2 {
+  transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out;
+  transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out;
+  border-radius:30px;
+}
+.arrow2:hover {
+  box-shadow: 0 0 40px 40px inset;
+  color: white;
+}
+
+.cloudfon
+{
+  	width: 100%;
+  	position: relative;
+}
+.online
+{
+	margin-top: -1000px;
+	margin-right: 450px;
+	float: right;
+}
+.button_onl
+{
+	float: right;
+	margin-top: -680px;
+	margin-right: 500px;
+	background-color: rgb(222, 217, 14);
+	font-family: Gill Sans, sans-serif;
+	color: rgb(41, 159, 202);
+	padding: 10px 20px 10px 20px;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	display: inline-block;
+	transform-style: preserve-3d;
+	box-shadow: 0 0 0 2px #b18597;	
+	transition: transform 0.15s;
+
+}
+.button_onl::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: yellow;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597;	
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.button_onl:hover 
+{
+  background: yellow;
+  transform: translate(0, 0.25em);
+}
+.button_onl:hover::before 
+{
+  box-shadow: 0 0 0 2px #b18597;
+  transform: translate3d(0, 0.5em, -1em);
+  background-color: orange;
+ }
+.button_onl:active {
+  background: red;
+  transform: translate(0em, 0.75em);
+  color: white;
+}
+.button_onl:active::before {
+  box-shadow: 0 0 0 2px #b18597;
+  transform: translate3d(0, 0, -1em);
+}
+
+*{box-sizing:border-box}
+form {
+  float: right;
+  width: 340px;
+  padding: 30px;
+  color: white;
+  margin-top: -950px; 
+  margin-right: 440px;	
+}
+
+form div {
+  margin-bottom: 15px;
+  position: relative;
+
+}
+label, span {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+
+}
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 100px;
+  outline: none;
+
+}
+select {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   border-radius: 100px;
+}
+.select-arrow {
+  position: absolute;
+  top: 38px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
